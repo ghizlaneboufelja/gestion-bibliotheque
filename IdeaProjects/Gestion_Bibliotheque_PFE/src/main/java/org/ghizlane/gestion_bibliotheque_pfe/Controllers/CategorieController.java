@@ -17,7 +17,7 @@ import java.util.Optional;
 @Controller
 public class CategorieController {
 
-
+    // c un exemple d'injection de dependance
     @Autowired
     private CategorieService categorieService;
 
