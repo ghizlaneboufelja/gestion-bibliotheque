@@ -1,0 +1,23 @@
+
+<!-- Footer -->
+<footer class="footer bg-light text-center py-3 mt-auto border-top">
+  <div class="container">
+    <span class="text-muted">© 2025 GBibliothèque - Tous droits réservés</span>
+  </div>
+</footer>
+
+
+<footer th:fragment="footer (extraScripts)">
+     <!-- Bootstrap core JavaScript-->
+       <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+      <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+     <!-- Custom scripts for all pages-->
+    <script th:src="@{/js/sb-admin-2.min.js}"></script>
+
+    <!-- page-specific scripts -->
+    <th:block th:replace="${extraScripts}" />
+</footer>
